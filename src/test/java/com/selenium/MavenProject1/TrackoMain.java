@@ -23,6 +23,8 @@ public class TrackoMain {
 		System.setProperty("webdriver.gecko.driver", "Resourses/geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.get("https://dev.tracko.co.in/");
+		
+		driver.manage().window().maximize();
 	}
 	@AfterTest
 	public void afterTest() {
